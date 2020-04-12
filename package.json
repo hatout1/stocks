@@ -5,7 +5,13 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "dev": "nodmon server.js",
+    "start": "if-env NODE_ENV=production && npm start:prod || npm run start:dev",
+    "start:prod": "node server.js",
+    "start:dev": "concurrently \"nodemon --ignore 'client/*'\" \"npm run client\"",
+    "client": "cd client && npm run start",
+    "install": "cd client && npm run install",
+    "build": "cd client/ && npm install && num run build"
   },
   "repository": {
     "type": "git",
