@@ -1,18 +1,25 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Route, BrowserRouter as Router } from "react-router-dom";
 
+import Footer from "./Components/Footer/Footer";
 import Login from "./Components/Login/Login";
-//
-import Navbar from "./Components/Navbar/Navbar";
 import Register from "./Components/Register/Register";
 
-// import Footer from "../Components/Footer/Footer";
+import "./App.css";
 
-function App() {
+export const UserContext = React.createContext([]);
+
+function App(props) {
   return (
-    <div>
-      <h1>Hello</h1>
-    </div>
+    <Router>
+      <div>
+        <div className="backGround">
+          <Route exact path="/" component={Login} />
+          <Route exact path="/register" component={Register} />
+          <Footer />
+        </div>
+      </div>
+    </Router>
   );
 }
 
