@@ -4,6 +4,7 @@ import { Route, BrowserRouter as Router } from "react-router-dom";
 import Footer from "./Components/Footer/Footer";
 import Login from "./Components/Login/Login";
 import Register from "./Components/Register/Register";
+import Header from "./Components/Header/Header"
 
 import "./App.css";
 
@@ -14,9 +15,10 @@ function App(props) {
     <Router>
       <div>
         <div className="backGround">
-          <Route exact path="/" component={Login} />
-          <Route exact path="/register" component={Register} />
-          <Footer />
+        <Header />
+        <Route exact path="/login" component={Login} />
+        <Route exact path="/register" component={Register} />
+        <Footer />
         </div>
       </div>
     </Router>

@@ -7,8 +7,8 @@ function Header(props) {
   return (
     <div className="jumbotron jumbotron-fluid" id="headerNav">
       <div className="container">
-        <h1 className="display-4">Mohamed</h1>
-        <Navbar user={props.user} />
+        <h1 className="display-4">Stock market</h1>
+        <Navbar />
         <p className="lead"></p>
       </div>
     </div>

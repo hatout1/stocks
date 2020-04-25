@@ -20,7 +20,7 @@ const Login = (props) => {
       if (isAuthenticated) {
         authContext.setUser(user);
         authContext.setIsAuthenticated(isAuthenticated);
-        props.history.push("/home");
+        props.history.push("/private-home");
       } else setMessage(message);
       console.log("message : " + message);
     });
@@ -30,8 +30,7 @@ const Login = (props) => {
     <div className="loginDiv">
       <div className="loginContainer">
         <div className="title">
-          <h1> Welcome to LarrysList</h1>
-          <h1> Please log in to start your search</h1>
+          <h1> Welcome </h1>
         </div>
         <form className="form" onSubmit={onSubmit}>
           <div className="login-input">
