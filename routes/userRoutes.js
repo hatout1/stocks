@@ -18,7 +18,9 @@ const signToken = (userID) => {
 
 userRouter.post("/register", (req, res) => {
   const { username, password, email } = req.body;
-  userRouter.findOne({ username }, (err, user) => {
+  console.log(req.body);
+  User.findOne({ username }, (err, user) => {
+    console.log("Connected to db: Yes");
     if (err)
       res
         .status(500)
@@ -30,15 +32,14 @@ userRouter.post("/register", (req, res) => {
     else {
       const newUser = new User({ username, email, password });
       newUser.save((err) => {
-        if (err) {
+        if (err)
           res.status(500).json({
             message: { msgBody: "username already exist", msgError: true },
           });
-        } else {
+        else
           res
             .status(201)
             .json({ message: { msgBody: "User created!", msgError: true } });
-        }
       });
     }
   });
