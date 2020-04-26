@@ -1,0 +1,18 @@
+.theWholeApp {
+  margin-left: 2.5%;
+  width: 95%;
+}
+.wholeDiv {
+  max-height: 500px;
+  display: flex;
+}
+.leftNav {
+  flex: 1;
+}
+
+.rightNav {
+  flex: 1;
+}
+.backGround {
+  flex: 2;
+}

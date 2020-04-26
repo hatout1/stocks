@@ -1,30 +1,18 @@
 .footerBar {
-  position: fixed;
+  /* position: fixed; */
   height: 50px;
   width: 100%;
-  transform: translateY(1400%);
+  transform: translateY(1100%);
   background-color: #003049;
   color: white;
 }
-
-/* .script {
-  display: inline-block;
-  animation: 10s linear 0s infinite animate;
-}
-@keyframes animate {
-  from {
-    transform: translateX(1000%);
-  }
-  to {
-    transform: translateX(-1000%);
-  }
-} */
 
 .script {
   display: flex;
 }
 .scriptInfo {
   flex: 1;
+  /* display: inline-block; */
   margin-left: 10px;
-  margin-top: 15px;
+  margin-top: 10px;
 }

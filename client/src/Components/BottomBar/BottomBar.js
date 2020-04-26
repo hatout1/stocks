@@ -3,40 +3,38 @@ import "./BottomBar.css";
 
 function BottomBar() {
   return (
-    <div>
-      <div className="footerBar">
-        <marquee behavior="scroll" direction="left">
-          <div className="script">
-            <div className="scriptInfo">
-              Here is some scrolling text... right to left!
-            </div>
-            <div className="scriptInfo">
-              Here is some scrolling text... right to left!
-            </div>
-            <div className="scriptInfo">
-              Here is some scrolling text... right to left!
-            </div>
-            <div className="scriptInfo">
-              Here is some scrolling text... right to left!
-            </div>
-            <div className="scriptInfo">
-              Here is some scrolling text... right to left!
-            </div>
-            <div className="scriptInfo">
-              Here is some scrolling text... right to left!
-            </div>
-            <div className="scriptInfo">
-              Here is some scrolling text... right to left!
-            </div>
-            <div className="scriptInfo">
-              Here is some scrolling text... right to left!
-            </div>
-            <div className="scriptInfo">
-              Here is some scrolling text... right to left!
-            </div>
+    <div className="footerBar">
+      <marquee behavior="scroll" direction="left">
+        <div className="script">
+          <div className="scriptInfo">
+            Here is some scrolling text... right to left!
           </div>
-        </marquee>
-      </div>
+          <div className="scriptInfo">
+            Here is some scrolling text... right to left!
+          </div>
+          <div className="scriptInfo">
+            Here is some scrolling text... right to left!
+          </div>
+          <div className="scriptInfo">
+            Here is some scrolling text... right to left!
+          </div>
+          <div className="scriptInfo">
+            Here is some scrolling text... right to left!
+          </div>
+          <div className="scriptInfo">
+            Here is some scrolling text... right to left!
+          </div>
+          <div className="scriptInfo">
+            Here is some scrolling text... right to left!
+          </div>
+          <div className="scriptInfo">
+            Here is some scrolling text... right to left!
+          </div>
+          <div className="scriptInfo">
+            Here is some scrolling text... right to left!
+          </div>
+        </div>
+      </marquee>
     </div>
   );
 }

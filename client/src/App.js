@@ -16,14 +16,26 @@ export const UserContext = React.createContext([]);
 function App(props) {
   return (
     <Router>
-      <div>
-        <div className="backGround">
-          <Header />
-          <Route exact path="/WatchList" component={WatchList} />
-          <Route exact path="/portfolio" component={Portfolio} />
-          <Route exact path="/login" component={Login} />
-          <Route exact path="/register" component={Register} />
+      <div className="theWholeApp">
+        <Header />
+        <div className="wholeDiv">
+          <div className="leftNav">
+            <h3>HHH HHHHHH</h3>
+          </div>
+          <div className="backGround">
+            <Route exact path="/WatchList" component={WatchList} />
+            <Route exact path="/portfolio" component={Portfolio} />
+            <Route exact path="/login" component={Login} />
+            <Route exact path="/register" component={Register} />
+          </div>
+          <div className="righttNav">
+            <h3>HHHHHHHHHH HHHHHHHH</h3>
+          </div>
+        </div>
+        <div>
           <BottomBar />
+        </div>
+        <div>
           <Footer />
         </div>
       </div>
