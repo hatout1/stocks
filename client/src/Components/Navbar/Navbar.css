@@ -1,0 +1,14 @@
+.navBarDiv {
+  display: flex;
+  text-align: center;
+}
+
+.navBarTag {
+  flex: 1;
+  background-color: rgb(74, 5, 139);
+}
+
+p {
+  color: white;
+  font-weight: bolder;
+}

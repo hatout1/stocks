@@ -15,6 +15,12 @@ let PortfolioSchema = new Schema({
   UserId: {
     type: String,
   },
+  availableCach: {
+    type: String,
+  },
+  transactionsHistory: {
+    type: String,
+  },
 });
 
 const Portfolio = mongoose.model("Porfolio", PortfolioSchema);

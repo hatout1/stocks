@@ -1,11 +1,11 @@
-import React, { Component } from "react";
+import React from "react";
 
-export default class WatchList extends Component {
-  render() {
-    return (
-      <div>
-        <h1>WatchList</h1>
-      </div>
-    );
-  }
+function WatchList() {
+  return (
+    <div>
+      <h1>Hello from Watchlist</h1>
+    </div>
+  );
 }
+
+export default WatchList;
