@@ -10,6 +10,8 @@ import WatchList from "./Components/WatchList/WatchList";
 
 import "./App.css";
 import BottomBar from "./Components/BottomBar/BottomBar";
+import LeftSideMenu from "./Components/LeftSideMenu/LeftSideMenu";
+import RightSideMenu from "./Components/RightSideMenu/RightSideMenu";
 
 export const UserContext = React.createContext([]);
 
@@ -20,7 +22,7 @@ function App(props) {
         <Header />
         <div className="wholeDiv">
           <div className="leftNav">
-            <h3>HHH HHHHHH</h3>
+            <LeftSideMenu />
           </div>
           <div className="backGround">
             <Route exact path="/WatchList" component={WatchList} />
@@ -28,14 +30,12 @@ function App(props) {
             <Route exact path="/login" component={Login} />
             <Route exact path="/register" component={Register} />
           </div>
-          <div className="righttNav">
-            <h3>HHHHHHHHHH HHHHHHHH</h3>
+          <div className="rightNav">
+            <RightSideMenu />
           </div>
         </div>
         <div>
           <BottomBar />
-        </div>
-        <div>
           <Footer />
         </div>
       </div>
