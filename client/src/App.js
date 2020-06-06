@@ -1,17 +1,18 @@
 import React, { useEffect, useState } from "react";
 import { Route, BrowserRouter as Router } from "react-router-dom";
 
+import BottomBar from "./Components/BottomBar/BottomBar";
 import Footer from "./Components/Footer/Footer";
-import Login from "./Components/Login/Login";
-import Register from "./Components/Register/Register";
 import Header from "./Components/Header/Header";
+import Home from "./Components/Home/Home";
+import LeftSideMenu from "./Components/LeftSideMenu/LeftSideMenu";
+import Login from "./Components/Login/Login";
 import Portfolio from "./Components/Portfolio/Portfolio";
+import Register from "./Components/Register/Register";
+import RightSideMenu from "./Components/RightSideMenu/RightSideMenu";
 import WatchList from "./Components/WatchList/WatchList";
 
 import "./App.css";
-import BottomBar from "./Components/BottomBar/BottomBar";
-import LeftSideMenu from "./Components/LeftSideMenu/LeftSideMenu";
-import RightSideMenu from "./Components/RightSideMenu/RightSideMenu";
 
 export const UserContext = React.createContext([]);
 
@@ -25,6 +26,8 @@ function App(props) {
             <LeftSideMenu />
           </div>
           <div className="backGround">
+            <Home />
+            <Route exact path="/home" component={Home} />
             <Route exact path="/WatchList" component={WatchList} />
             <Route exact path="/portfolio" component={Portfolio} />
             <Route exact path="/login" component={Login} />
